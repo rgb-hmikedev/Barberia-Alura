@@ -1,49 +1,153 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+  
+    text-decoration: none;
+    list-style: none;
+  
+}
+/*============= Estilos header ==================*/
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+
+.caja{
+ width: 940px;
+ position: relative;
+ margin: 0 auto;
+
+}
+
+/*========== Estilos nav ===============*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin:0 0 0 15px ;
+}
+
+
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+    font-size: 22px;
     
 }
 
-
-p{
-    text-align: center;
+nav a:hover{
+    color: #c78c19;
+    text-decoration:underline;
 }
 
-.principal{
-    background: #cccccc;
-    padding: 20px;
-}
-
-.titulo__principal{
-    text-align: center;
-}
-
-
- em strong{
-    color:red ;
-}
-
-#banner{
-    width: 100%;
+.productos{
+   width: 940px;
+   margin: 0 auto;
+   padding: 50px;
 
 }
 
-.items{
-    font-style: italic;
-    list-style: none;
-}
-
-.titulo__centralizado{
-    text-align: center;
-}
-
-ul{
-    background-color: red;
+.productos li{
     display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    text-align: center;
+    width: 30%;
+    vertical-align: top ;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+   
+  
 }
 
-.img__diferenciales{
+.productos li:hover{
+    border-color: #c78c19;
+    
+}
+
+.productos__titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos__titulo:hover{
+    font-size: 33px;
+}
+
+.productos__descripcion{
+    font-size: 18px;    
+}
+
+.productos__precio{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background-image: url(/Assets/bg.jpg);
+    padding: 40px;
+   
+}
+
+.copyright{
+    color: #FFFFFF;
+    font: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
-    padding: 30px;
+}
+
+.checkbox{
+    margin: 2opx;
+
+}
+
+.enviar{
+    width:40%;
+    padding:15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
 }
